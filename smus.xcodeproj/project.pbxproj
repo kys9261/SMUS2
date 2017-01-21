@@ -26,6 +26,14 @@
 		167505671E2FA726002B1F84 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167505661E2FA726002B1F84 /* AVFoundation.framework */; };
 		167505691E2FA72D002B1F84 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167505681E2FA72D002B1F84 /* AudioToolbox.framework */; };
 		1675056B1E2FA731002B1F84 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1675056A1E2FA731002B1F84 /* AdSupport.framework */; };
+		1675057F1E2FC397002B1F84 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167505281E2FA3C9002B1F84 /* Alamofire.framework */; };
+		167505801E2FC397002B1F84 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 167505281E2FA3C9002B1F84 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		167505841E2FC39C002B1F84 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167505461E2FA426002B1F84 /* SwiftyJSON.framework */; };
+		167505851E2FC39C002B1F84 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 167505461E2FA426002B1F84 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1675058D1E2FCBAA002B1F84 /* WeekDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675058C1E2FCBAA002B1F84 /* WeekDayViewController.swift */; };
+		1675059C1E30E634002B1F84 /* TimeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059B1E30E634002B1F84 /* TimeTabViewController.swift */; };
+		1675059E1E3107C3002B1F84 /* SatDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059D1E3107C3002B1F84 /* SatDayViewController.swift */; };
+		167505A01E3107D1002B1F84 /* WeekEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,7 +163,36 @@
 			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
 			remoteInfo = "SwiftyJSON iOS";
 		};
+		167505811E2FC397002B1F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1675051C1E2FA3C8002B1F84 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		167505861E2FC39C002B1F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1675053B1E2FA426002B1F84 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		167505831E2FC398002B1F84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				167505851E2FC39C002B1F84 /* SwiftyJSON.framework in Embed Frameworks */,
+				167505801E2FC397002B1F84 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		167504A11E2FA09D002B1F84 /* smus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +222,12 @@
 		167505661E2FA726002B1F84 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		167505681E2FA72D002B1F84 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1675056A1E2FA731002B1F84 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1675057B1E2FC1BA002B1F84 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		1675057C1E2FC1BA002B1F84 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1675058C1E2FCBAA002B1F84 /* WeekDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayViewController.swift; sourceTree = "<group>"; };
+		1675059B1E30E634002B1F84 /* TimeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTabViewController.swift; sourceTree = "<group>"; };
+		1675059D1E3107C3002B1F84 /* SatDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatDayViewController.swift; sourceTree = "<group>"; };
+		1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekEndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,8 +244,10 @@
 				167505611E2FA715002B1F84 /* EventKitUI.framework in Frameworks */,
 				1675055D1E2FA710002B1F84 /* MessageUI.framework in Frameworks */,
 				1675055B1E2FA709002B1F84 /* StoreKit.framework in Frameworks */,
+				1675057F1E2FC397002B1F84 /* Alamofire.framework in Frameworks */,
 				167505591E2FA6F5002B1F84 /* SystemConfiguration.framework in Frameworks */,
 				167505561E2FA66B002B1F84 /* GoogleMobileAds.framework in Frameworks */,
+				167505841E2FC39C002B1F84 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +302,10 @@
 				167504AD1E2FA09D002B1F84 /* LaunchScreen.storyboard */,
 				167504B01E2FA09D002B1F84 /* Info.plist */,
 				167505391E2FA3E3002B1F84 /* Const.swift */,
+				1675058C1E2FCBAA002B1F84 /* WeekDayViewController.swift */,
+				1675059B1E30E634002B1F84 /* TimeTabViewController.swift */,
+				1675059D1E3107C3002B1F84 /* SatDayViewController.swift */,
+				1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */,
 			);
 			path = smus;
 			sourceTree = "<group>";
@@ -334,12 +383,15 @@
 				1675049D1E2FA09D002B1F84 /* Sources */,
 				1675049E1E2FA09D002B1F84 /* Frameworks */,
 				1675049F1E2FA09D002B1F84 /* Resources */,
+				167505831E2FC398002B1F84 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				167505541E2FA42F002B1F84 /* PBXTargetDependency */,
 				167505361E2FA3D1002B1F84 /* PBXTargetDependency */,
+				167505821E2FC397002B1F84 /* PBXTargetDependency */,
+				167505871E2FC39C002B1F84 /* PBXTargetDependency */,
 			);
 			name = smus;
 			productName = smus;
@@ -416,7 +468,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 167504981E2FA09D002B1F84;
@@ -574,9 +625,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1675059E1E3107C3002B1F84 /* SatDayViewController.swift in Sources */,
 				167504A71E2FA09D002B1F84 /* ViewController.swift in Sources */,
 				167504A51E2FA09D002B1F84 /* AppDelegate.swift in Sources */,
+				1675059C1E30E634002B1F84 /* TimeTabViewController.swift in Sources */,
 				1675053A1E2FA3E3002B1F84 /* Const.swift in Sources */,
+				167505A01E3107D1002B1F84 /* WeekEndViewController.swift in Sources */,
+				1675058D1E2FCBAA002B1F84 /* WeekDayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +674,16 @@
 			name = "SwiftyJSON iOS";
 			targetProxy = 167505531E2FA42F002B1F84 /* PBXContainerItemProxy */;
 		};
+		167505821E2FC397002B1F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 167505811E2FC397002B1F84 /* PBXContainerItemProxy */;
+		};
+		167505871E2FC39C002B1F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 167505861E2FC39C002B1F84 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -626,6 +691,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				167504A91E2FA09D002B1F84 /* Base */,
+				1675057B1E2FC1BA002B1F84 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -634,6 +700,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				167504AE1E2FA09D002B1F84 /* Base */,
+				1675057C1E2FC1BA002B1F84 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -645,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -695,6 +763,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -737,6 +806,7 @@
 		167504CA1E2FA09D002B1F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PAM7TGY2L5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -755,6 +825,7 @@
 		167504CB1E2FA09D002B1F84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PAM7TGY2L5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -847,6 +918,7 @@
 				167504CB1E2FA09D002B1F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		167504CC1E2FA09D002B1F84 /* Build configuration list for PBXNativeTarget "smusTests" */ = {
 			isa = XCConfigurationList;
@@ -855,6 +927,7 @@
 				167504CE1E2FA09D002B1F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		167504CF1E2FA09D002B1F84 /* Build configuration list for PBXNativeTarget "smusUITests" */ = {
 			isa = XCConfigurationList;
@@ -863,6 +936,7 @@
 				167504D11E2FA09D002B1F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

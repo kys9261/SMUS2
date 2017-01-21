@@ -1,17 +1,17 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AA9875C18FCCFAB029B379C436C932A3F59A53EE",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "051C5E6DE7836E48FE950B8A8BB5A5924D0E9C01",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 9223372036854775807,
-    "AA9875C18FCCFAB029B379C436C932A3F59A53EE" : 9223372036854775807,
+    "051C5E6DE7836E48FE950B8A8BB5A5924D0E9C01" : 9223372036854775807,
     "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CB54A784-C76D-480A-B790-7CFA11EF1513",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "smus\/SwiftyJSON\/",
-    "AA9875C18FCCFAB029B379C436C932A3F59A53EE" : "smus\/",
+    "051C5E6DE7836E48FE950B8A8BB5A5924D0E9C01" : "smus\/",
     "67620B5EFA902936DF04070AF595B76AB0333747" : "smus\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "smus",
@@ -19,14 +19,14 @@
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "smus.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kys9261\/smus2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "051C5E6DE7836E48FE950B8A8BB5A5924D0E9C01"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/Alamofire\/Alamofire.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kys9261\/smus2.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AA9875C18FCCFAB029B379C436C932A3F59A53EE"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SwiftyJSON\/SwiftyJSON.git",
