@@ -88,7 +88,7 @@
                 <outlet property="label4" destination="Cgd-up-7OG" id="s7T-1Y-Ig9"/>
                 <outlet property="label5" destination="9HV-5v-dJE" id="GV0-VQ-zWs"/>
             </connections>
-            <point key="canvasLocation" x="266.5" y="91"/>
+            <point key="canvasLocation" x="135" y="98"/>
         </tableViewCell>
     </objects>
 </document>

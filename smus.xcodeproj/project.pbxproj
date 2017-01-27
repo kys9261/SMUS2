@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		160FC77F1E3B5FE90048B7AC /* asCampus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160FC77E1E3B5FE90048B7AC /* asCampus.xib */; };
+		160FC78E1E3B7A2F0048B7AC /* caStationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160FC78D1E3B7A2E0048B7AC /* caStationCell.xib */; };
+		160FC7901E3B7A440048B7AC /* caStationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FC78F1E3B7A440048B7AC /* caStationCellView.swift */; };
+		160FC7921E3B7AFA0048B7AC /* onYangController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FC7911E3B7AFA0048B7AC /* onYangController.swift */; };
+		160FC7941E3B7B050048B7AC /* onYangCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FC7931E3B7B050048B7AC /* onYangCellView.swift */; };
+		160FC7961E3B7B140048B7AC /* onYangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160FC7951E3B7B140048B7AC /* onYangCell.xib */; };
+		160FC7981E3B7B240048B7AC /* onYang.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160FC7971E3B7B240048B7AC /* onYang.xib */; };
 		1622A6801E38F20700482CE9 /* BMJUA_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1622A6721E38F15C00482CE9 /* BMJUA_otf.otf */; };
 		162650681E361F9B002C4B2B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 162650671E361F9B002C4B2B /* Info.plist */; };
 		163F41BA1E3A1178000EF7FF /* caCampusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163F41B91E3A1178000EF7FF /* caCampusCell.xib */; };
@@ -189,6 +195,12 @@
 
 /* Begin PBXFileReference section */
 		160FC77E1E3B5FE90048B7AC /* asCampus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = asCampus.xib; sourceTree = "<group>"; };
+		160FC78D1E3B7A2E0048B7AC /* caStationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caStationCell.xib; sourceTree = "<group>"; };
+		160FC78F1E3B7A440048B7AC /* caStationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caStationCellView.swift; sourceTree = "<group>"; };
+		160FC7911E3B7AFA0048B7AC /* onYangController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onYangController.swift; sourceTree = "<group>"; };
+		160FC7931E3B7B050048B7AC /* onYangCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onYangCellView.swift; sourceTree = "<group>"; };
+		160FC7951E3B7B140048B7AC /* onYangCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = onYangCell.xib; sourceTree = "<group>"; };
+		160FC7971E3B7B240048B7AC /* onYang.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = onYang.xib; sourceTree = "<group>"; };
 		1622A6721E38F15C00482CE9 /* BMJUA_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMJUA_otf.otf; sourceTree = "<group>"; };
 		162650671E361F9B002C4B2B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		163F41B91E3A1178000EF7FF /* caCampusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caCampusCell.xib; sourceTree = "<group>"; };
@@ -252,6 +264,10 @@
 			children = (
 				163F41B91E3A1178000EF7FF /* caCampusCell.xib */,
 				163F41C81E3A123B000EF7FF /* caCampusCellView.swift */,
+				160FC78D1E3B7A2E0048B7AC /* caStationCell.xib */,
+				160FC78F1E3B7A440048B7AC /* caStationCellView.swift */,
+				160FC7931E3B7B050048B7AC /* onYangCellView.swift */,
+				160FC7951E3B7B140048B7AC /* onYangCell.xib */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -260,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				163F41D01E3A13EE000EF7FF /* caCampusController.swift */,
+				160FC7911E3B7AFA0048B7AC /* onYangController.swift */,
 			);
 			name = LocationController;
 			sourceTree = "<group>";
@@ -352,6 +369,7 @@
 			children = (
 				16650C0E1E37A8F300C22FA3 /* caCampus.xib */,
 				160FC77E1E3B5FE90048B7AC /* asCampus.xib */,
+				160FC7971E3B7B240048B7AC /* onYang.xib */,
 			);
 			name = TitleView;
 			sourceTree = "<group>";
@@ -550,13 +568,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160FC78E1E3B7A2F0048B7AC /* caStationCell.xib in Resources */,
 				1622A6801E38F20700482CE9 /* BMJUA_otf.otf in Resources */,
 				160FC77F1E3B5FE90048B7AC /* asCampus.xib in Resources */,
 				167504AC1E2FA09D002B1F84 /* Assets.xcassets in Resources */,
 				163F41BA1E3A1178000EF7FF /* caCampusCell.xib in Resources */,
 				167504AA1E2FA09D002B1F84 /* Main.storyboard in Resources */,
+				160FC7961E3B7B140048B7AC /* onYangCell.xib in Resources */,
 				162650681E361F9B002C4B2B /* Info.plist in Resources */,
 				16650C0F1E37A8F300C22FA3 /* caCampus.xib in Resources */,
+				160FC7981E3B7B240048B7AC /* onYang.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,9 +594,12 @@
 				1675059C1E30E634002B1F84 /* TimeTabViewController.swift in Sources */,
 				163F41D71E3A4CE2000EF7FF /* AsCamViewController.swift in Sources */,
 				163F41D51E3A4899000EF7FF /* CaCamViewController.swift in Sources */,
+				160FC7941E3B7B050048B7AC /* onYangCellView.swift in Sources */,
 				1675053A1E2FA3E3002B1F84 /* Const.swift in Sources */,
 				167505A01E3107D1002B1F84 /* WeekEndViewController.swift in Sources */,
 				163F41D91E3A4FAE000EF7FF /* CamTimeTabViewController.swift in Sources */,
+				160FC7921E3B7AFA0048B7AC /* onYangController.swift in Sources */,
+				160FC7901E3B7A440048B7AC /* caStationCellView.swift in Sources */,
 				163F41D31E3A22A8000EF7FF /* Alamofire+Synchronous.swift in Sources */,
 				163F41D11E3A13EE000EF7FF /* caCampusController.swift in Sources */,
 				163F41C91E3A123B000EF7FF /* caCampusCellView.swift in Sources */,

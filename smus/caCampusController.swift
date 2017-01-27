@@ -21,9 +21,9 @@ class caCampusController: NSObject{
     init(location: String, vacation: Bool){
         if vacation {
             if location == "caCampus" {
-                
+                self.url = dapartCheonanCamVac
             }else{
-                
+                self.url = dapartAsanCamVac
             }
         }else{
             if location == "caCampus" {

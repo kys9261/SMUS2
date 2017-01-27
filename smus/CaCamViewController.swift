@@ -33,14 +33,12 @@ class CaCamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.timeTableView?.tableFooterView = UIView()
         
-        
         //controller init
         caCamController = caCampusController(location: "caCampus", vacation: self.vacation!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     func topBarHeight() -> CGFloat {

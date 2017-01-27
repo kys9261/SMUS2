@@ -33,7 +33,6 @@ class AsCamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.timeTableView?.tableFooterView = UIView()
         
-        
         //controller init
         caCamController = caCampusController(location: "asCampus", vacation: self.vacation!)
     }
