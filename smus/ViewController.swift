@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var commentLabel: UILabel!
 
     var controller: TimeTabViewController?
+    var controller2: CamTimeTabViewController?
+        
     var isVacation: Bool? = nil
     
     override func viewDidLoad() {
@@ -44,14 +46,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    
-    @IBAction func cheonanStation(_ sender: UIButton) {
+    @IBAction func caStation(_ sender: Any) {
         self.performSegue(withIdentifier: "config", sender: self)
         controller?.location = "caStation"
         controller?.vacation = isVacation
     }
     
-    @IBAction func cheonanTerminal(_ sender: UIButton) {
+    @IBAction func caTerminal(_ sender: UIButton) {
         self.performSegue(withIdentifier: "config", sender: self)
         controller?.location = "caTerminal"
         controller?.vacation = isVacation
@@ -63,15 +64,17 @@ class ViewController: UIViewController {
         controller?.vacation = isVacation
     }
     
-    @IBAction func cheonanCampus(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "config", sender: self)
-        controller?.location = "caCampus"
-        controller?.vacation = isVacation
+    @IBAction func caCampus(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "config2", sender: self)
+        controller2?.location = "caCampus"
+        controller2?.vacation = isVacation
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        controller = segue.destination as? TimeTabViewController
-
+        if segue.identifier! == "config2"{
+            controller2 = segue.destination as? CamTimeTabViewController
+        }else{
+            controller = segue.destination as? TimeTabViewController
+        }
     }
 }
-

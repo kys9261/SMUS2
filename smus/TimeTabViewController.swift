@@ -17,26 +17,29 @@ class TimeTabViewController: UITabBarController{
     @IBOutlet weak var dataTab: UITabBar!
     
     override func viewDidLoad() {
+
+        if self.location != "caCampus"{
+            let items: [UITabBarItem] = self.dataTab.items!
+
+            //방학때는 평일과 주말만 운영(2개의 탭만)
         
-        //방학때는 평일과 주말만 운영(2개의 탭만)
-        let items: [UITabBarItem] = self.dataTab.items!
+            items[0].isEnabled = true
+            items[0].title = "평일"
         
-        items[0].isEnabled = true
-        items[0].title = "평일"
+            items[1].isEnabled = true
+            items[1].title = "토요일/공휴일"
         
-        items[1].isEnabled = true
-        items[1].title = "토요일/공휴일"
-        
-        items[2].isEnabled = true
-        items[2].title = "일요일"
-        
-        if self.vacation == true {
-            items[1].title = "토요일/일요일/공휴일"
-            items[2].isEnabled = false
+            items[2].isEnabled = true
+            items[2].title = "일요일"
+            
+            if self.vacation == true {
+                items[1].title = "토요일/일요일/공휴일"
+                items[2].isEnabled = false
+            }
         }
         
         //온양과 천안캠은 탭바 필요없음.
-        if self.location == "onYang" || self.location == "caCampus" {
+        if self.location == "onYang" {
             dataTab.isHidden = true
         }
     }

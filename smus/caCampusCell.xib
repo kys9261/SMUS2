@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMJUA_otf.otf">
+            <string>BMJUAOTF</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="B70-AR-w1G" customClass="caCampusCellView" customModule="smus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B70-AR-w1G" id="cjH-II-s8T">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FH7-OZ-gXr">
+                        <rect key="frame" x="11" y="13" width="355" height="17"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urE-n2-Bhj" userLabel="Label1">
+                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67.5" id="MEf-ZV-vHa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-rx-MGH">
+                                <rect key="frame" x="85" y="0.0" width="50" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UY7-s4-VCe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg1-R5-zLk">
+                                <rect key="frame" x="152.5" y="0.0" width="50" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fi0-B7-Nxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgd-up-7OG">
+                                <rect key="frame" x="219.5" y="0.0" width="50" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ndg-xv-aA6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HV-5v-dJE">
+                                <rect key="frame" x="287" y="0.0" width="68" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="b02-Yk-RDj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FH7-OZ-gXr" firstAttribute="leading" secondItem="cjH-II-s8T" secondAttribute="leadingMargin" constant="3" id="9vf-4V-MX3"/>
+                    <constraint firstItem="FH7-OZ-gXr" firstAttribute="centerY" secondItem="cjH-II-s8T" secondAttribute="centerY" id="C6R-dk-MNf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FH7-OZ-gXr" secondAttribute="trailing" constant="3" id="nrG-2p-uim"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label1" destination="urE-n2-Bhj" id="LqD-AY-YSa"/>
+                <outlet property="label2" destination="Aau-rx-MGH" id="wsJ-as-5PM"/>
+                <outlet property="label3" destination="Mg1-R5-zLk" id="QJY-ia-Stw"/>
+                <outlet property="label4" destination="Cgd-up-7OG" id="s7T-1Y-Ig9"/>
+                <outlet property="label5" destination="9HV-5v-dJE" id="GV0-VQ-zWs"/>
+            </connections>
+            <point key="canvasLocation" x="266.5" y="91"/>
+        </tableViewCell>
+    </objects>
+</document>
