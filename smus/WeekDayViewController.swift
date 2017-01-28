@@ -19,6 +19,7 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var oyController: onYangController? = nil
     var csController: caStationController? = nil
+    var ctController: caTerminalController? = nil
     
     override func viewWillAppear(_ animated: Bool) {
         let tabBarCont = self.tabBarController as! TimeTabViewController
@@ -38,6 +39,8 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
         //controller init
         if location == "caStation"{
             csController = caStationController(location: "caStationWeekDay", vacation: self.vacation!)
+        }else if location == "caTerminal"{
+            ctController = caTerminalController(location: "caTerminalWeekDay", vacation: self.vacation!)
         }else if location == "onYang"{
             oyController = onYangController(vacation: self.vacation!)
         }
@@ -65,25 +68,24 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.location == "caStation"{
             return (csController?.cellSize())!
+        }else if self.location == "caTerminal"{
+            return (ctController?.cellSize())!
         }else if self.location == "onYang"{
             return (oyController?.cellSize())!
-        }else{
-            return 1
+        }
+        else{
+            return 0
         }
     }
     
     // 셀 내용 변경하기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if self.location == "caStation"{
-            return (csController?.getCell(location: "caStationWeekDay", row: indexPath.row))!
-        }else if self.location == "onYang"{
-            if self.vacation! {
-                return (oyController?.getCell(location: "onYangVac", row: indexPath.row))!
-            }else{
-                return (oyController?.getCell(location: "onYang", row: indexPath.row))!
-            }
+            return (csController?.getCell(location: "caStationWeekDay", vacation: self.vacation!, row: indexPath.row))!
+        }else if self.location == "caTerminal"{
+            return (ctController?.getCell(location: "caTerminalWeekDay", vacation: self.vacation!, row: indexPath.row))!
         }else{
-            return (oyController?.getCell(location: "onYang", row: indexPath.row))!
+            return (oyController?.getCell(location: "onYang", vacation: self.vacation!, row: indexPath.row))!
         }
     }
     

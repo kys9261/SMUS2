@@ -23,16 +23,16 @@
                         <rect key="frame" x="11" y="11.5" width="355" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTb-6b-pTC" userLabel="Label1">
-                                <rect key="frame" x="0.0" y="0.0" width="68" height="20.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67.5" id="ymb-hm-jCG"/>
+                                    <constraint firstAttribute="width" constant="46" id="ymb-hm-jCG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk1-32-Ri1">
-                                <rect key="frame" x="72" y="0.0" width="50" height="20.5"/>
+                                <rect key="frame" x="52" y="0.0" width="50" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Rqi-lF-j63"/>
                                 </constraints>
@@ -41,36 +41,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAY-xT-RDA">
-                                <rect key="frame" x="125.5" y="0.0" width="50" height="20.5"/>
+                                <rect key="frame" x="108.5" y="0.0" width="52" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="1U8-sX-x3W"/>
+                                    <constraint firstAttribute="width" constant="52" id="1U8-sX-x3W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj5-lF-RZr">
-                                <rect key="frame" x="179.5" y="0.0" width="50" height="20.5"/>
+                                <rect key="frame" x="166.5" y="0.0" width="75" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="5Wi-1w-eDO"/>
+                                    <constraint firstAttribute="width" constant="75" id="5Wi-1w-eDO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-DM-MDw" userLabel="Label5">
-                                <rect key="frame" x="233" y="0.0" width="50" height="20.5"/>
+                                <rect key="frame" x="248" y="0.0" width="55" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="iel-i3-Kso"/>
+                                    <constraint firstAttribute="width" constant="55" id="iel-i3-Kso"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3Z-KA-uC6" userLabel="Label6">
-                                <rect key="frame" x="287" y="0.0" width="68" height="20.5"/>
+                                <rect key="frame" x="309" y="0.0" width="46" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="68" id="BLC-fm-X8V"/>
+                                    <constraint firstAttribute="width" constant="46" id="BLC-fm-X8V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

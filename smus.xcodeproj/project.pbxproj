@@ -49,6 +49,10 @@
 		1675059C1E30E634002B1F84 /* TimeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059B1E30E634002B1F84 /* TimeTabViewController.swift */; };
 		1675059E1E3107C3002B1F84 /* SatDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059D1E3107C3002B1F84 /* SatDayViewController.swift */; };
 		167505A01E3107D1002B1F84 /* WeekEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */; };
+		16BDC12E1E3CDFEA0054D407 /* caTerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDC12D1E3CDFEA0054D407 /* caTerminalController.swift */; };
+		16BDC13D1E3CE02C0054D407 /* caTerminalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BDC13C1E3CE02C0054D407 /* caTerminalCell.xib */; };
+		16BDC13F1E3CE0450054D407 /* caTerminalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDC13E1E3CE0450054D407 /* caTerminalCellView.swift */; };
+		16BDC1411E3CE08A0054D407 /* caTerminal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BDC1401E3CE08A0054D407 /* caTerminal.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +242,10 @@
 		1675059B1E30E634002B1F84 /* TimeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTabViewController.swift; sourceTree = "<group>"; };
 		1675059D1E3107C3002B1F84 /* SatDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatDayViewController.swift; sourceTree = "<group>"; };
 		1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekEndViewController.swift; sourceTree = "<group>"; };
+		16BDC12D1E3CDFEA0054D407 /* caTerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caTerminalController.swift; sourceTree = "<group>"; };
+		16BDC13C1E3CE02C0054D407 /* caTerminalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caTerminalCell.xib; sourceTree = "<group>"; };
+		16BDC13E1E3CE0450054D407 /* caTerminalCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caTerminalCellView.swift; sourceTree = "<group>"; };
+		16BDC1401E3CE08A0054D407 /* caTerminal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caTerminal.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,8 +278,10 @@
 				163F41C81E3A123B000EF7FF /* caCampusCellView.swift */,
 				160FC78D1E3B7A2E0048B7AC /* caStationCell.xib */,
 				160FC78F1E3B7A440048B7AC /* caStationCellView.swift */,
-				160FC7931E3B7B050048B7AC /* onYangCellView.swift */,
 				160FC7951E3B7B140048B7AC /* onYangCell.xib */,
+				160FC7931E3B7B050048B7AC /* onYangCellView.swift */,
+				16BDC13C1E3CE02C0054D407 /* caTerminalCell.xib */,
+				16BDC13E1E3CE0450054D407 /* caTerminalCellView.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -282,6 +292,7 @@
 				163F41D01E3A13EE000EF7FF /* caCampusController.swift */,
 				160FC7911E3B7AFA0048B7AC /* onYangController.swift */,
 				165F35411E3CB63B00805F24 /* caStationController.swift */,
+				16BDC12D1E3CDFEA0054D407 /* caTerminalController.swift */,
 			);
 			name = LocationController;
 			sourceTree = "<group>";
@@ -376,6 +387,7 @@
 				160FC77E1E3B5FE90048B7AC /* asCampus.xib */,
 				160FC7971E3B7B240048B7AC /* onYang.xib */,
 				16062D661E3CA26E00D989CF /* caStation.xib */,
+				16BDC1401E3CE08A0054D407 /* caTerminal.xib */,
 			);
 			name = TitleView;
 			sourceTree = "<group>";
@@ -575,8 +587,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				160FC78E1E3B7A2F0048B7AC /* caStationCell.xib in Resources */,
+				16BDC1411E3CE08A0054D407 /* caTerminal.xib in Resources */,
 				1622A6801E38F20700482CE9 /* BMJUA_otf.otf in Resources */,
 				16062D671E3CA26E00D989CF /* caStation.xib in Resources */,
+				16BDC13D1E3CE02C0054D407 /* caTerminalCell.xib in Resources */,
 				160FC77F1E3B5FE90048B7AC /* asCampus.xib in Resources */,
 				167504AC1E2FA09D002B1F84 /* Assets.xcassets in Resources */,
 				163F41BA1E3A1178000EF7FF /* caCampusCell.xib in Resources */,
@@ -608,6 +622,8 @@
 				160FC7921E3B7AFA0048B7AC /* onYangController.swift in Sources */,
 				160FC7901E3B7A440048B7AC /* caStationCellView.swift in Sources */,
 				163F41D31E3A22A8000EF7FF /* Alamofire+Synchronous.swift in Sources */,
+				16BDC12E1E3CDFEA0054D407 /* caTerminalController.swift in Sources */,
+				16BDC13F1E3CE0450054D407 /* caTerminalCellView.swift in Sources */,
 				163F41D11E3A13EE000EF7FF /* caCampusController.swift in Sources */,
 				163F41C91E3A123B000EF7FF /* caCampusCellView.swift in Sources */,
 				1675058D1E2FCBAA002B1F84 /* WeekDayViewController.swift in Sources */,

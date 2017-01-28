@@ -243,9 +243,35 @@
                     <view key="view" contentMode="scaleToFill" id="cmI-uv-jKl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B0g-Jg-Rsh">
+                                <rect key="frame" x="0.0" y="114" width="320" height="317"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-dr-4mt">
+                                <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7y6-cU-DKS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O3q-dr-4mt" firstAttribute="leading" secondItem="cmI-uv-jKl" secondAttribute="leading" id="0D4-NQ-wqY"/>
+                            <constraint firstItem="zsg-Co-bsZ" firstAttribute="top" secondItem="B0g-Jg-Rsh" secondAttribute="bottom" id="Ek7-ig-iqj"/>
+                            <constraint firstAttribute="trailing" secondItem="B0g-Jg-Rsh" secondAttribute="trailing" id="Wt4-Mp-fqy"/>
+                            <constraint firstItem="B0g-Jg-Rsh" firstAttribute="top" secondItem="O3q-dr-4mt" secondAttribute="bottom" id="bAh-v5-p9n"/>
+                            <constraint firstItem="O3q-dr-4mt" firstAttribute="top" secondItem="eKW-NQ-hDV" secondAttribute="bottom" id="e2y-of-HAl"/>
+                            <constraint firstItem="B0g-Jg-Rsh" firstAttribute="leading" secondItem="cmI-uv-jKl" secondAttribute="leading" id="iEX-WS-8X7"/>
+                            <constraint firstAttribute="trailing" secondItem="O3q-dr-4mt" secondAttribute="trailing" id="qSF-LC-1wX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="토요일/공휴일" image="icon" selectedImage="icon_click" id="Htj-Rs-akJ"/>
+                    <connections>
+                        <outlet property="timeTableView" destination="B0g-Jg-Rsh" id="c5A-x6-tCe"/>
+                        <outlet property="titleView" destination="O3q-dr-4mt" id="4uJ-Kc-Fcj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q22-Lk-zXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,9 +288,35 @@
                     <view key="view" contentMode="scaleToFill" id="JtV-B0-CO2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KEs-MW-3nP">
+                                <rect key="frame" x="0.0" y="114" width="320" height="317"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woL-a4-1FH">
+                                <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QHd-np-QZR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="woL-a4-1FH" secondAttribute="trailing" id="5Ze-wp-6tX"/>
+                            <constraint firstItem="QAi-eW-3Zz" firstAttribute="top" secondItem="KEs-MW-3nP" secondAttribute="bottom" id="HB3-xA-o1T"/>
+                            <constraint firstItem="woL-a4-1FH" firstAttribute="top" secondItem="DFC-sc-Kaf" secondAttribute="bottom" id="QUZ-sD-fhk"/>
+                            <constraint firstItem="KEs-MW-3nP" firstAttribute="top" secondItem="woL-a4-1FH" secondAttribute="bottom" id="TTG-s9-4aG"/>
+                            <constraint firstItem="woL-a4-1FH" firstAttribute="leading" secondItem="JtV-B0-CO2" secondAttribute="leading" id="dHL-Ds-dEn"/>
+                            <constraint firstItem="KEs-MW-3nP" firstAttribute="leading" secondItem="JtV-B0-CO2" secondAttribute="leading" id="oqv-Qb-l2L"/>
+                            <constraint firstAttribute="trailing" secondItem="KEs-MW-3nP" secondAttribute="trailing" id="sCN-Jy-0p1"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="icon" selectedImage="icon_click" id="mkV-Af-NPa"/>
+                    <connections>
+                        <outlet property="timeTableView" destination="KEs-MW-3nP" id="xJt-pF-sfR"/>
+                        <outlet property="titleView" destination="woL-a4-1FH" id="Vyh-p9-u5X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7n-qZ-yEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
