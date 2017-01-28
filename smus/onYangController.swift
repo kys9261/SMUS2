@@ -38,11 +38,25 @@ class onYangController: NSObject{
         let cell = Bundle.main.loadNibNamed("onYangCell", owner: self, options: nil)?.first as! onYangCellView
         
         var data = self.timeData![row]
-        cell.label1.text = data["아산캠퍼스출발"].stringValue
-        cell.label2.text = data["배방지역"].stringValue
-        cell.label3.text = data["터미널"].stringValue
-        cell.label4.text = data["온양역"].stringValue
-        cell.label5.text = data["아산캠퍼스도착"].stringValue
+        if location == "onYangVac" {
+            cell.label1.text = data["아산캠퍼스"].stringValue
+            cell.label2.text = " - "
+            cell.label3.text = data["온양터미널"].stringValue
+            cell.label4.text = data["온양역"].stringValue
+            cell.label5.text = data["아산캠퍼스2"].stringValue
+        }else {
+            cell.label1.text = data["아산캠퍼스출발"].stringValue
+            cell.label2.text = data["배방지역"].stringValue
+            cell.label3.text = data["터미널"].stringValue
+            cell.label4.text = data["온양역"].stringValue
+            
+            if data["온양역"].stringValue.contains("금") == true{
+                cell.label4.font = UIFont(name: cell.label4.font.fontName, size: 11.0)
+            }
+            
+            cell.label5.text = data["아산캠퍼스도착"].stringValue
+        }
+        
         return cell
     }
     

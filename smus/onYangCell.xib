@@ -9,66 +9,61 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="BMJUA_otf.otf">
-            <string>BMJUAOTF</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="seo-j4-Wvj" customClass="onYangCellView" customModule="smus" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="349" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="372" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="seo-j4-Wvj" id="Roq-iZ-Cnf">
-                <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="372" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Gi7-0M-0dG">
-                        <rect key="frame" x="11" y="13.5" width="327" height="17"/>
+                        <rect key="frame" x="13" y="12" width="348" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-PP-Il9" userLabel="Label1">
-                                <rect key="frame" x="0.0" y="0.0" width="65" height="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="Bmi-pc-Ndo"/>
+                                    <constraint firstAttribute="width" constant="68" id="Bmi-pc-Ndo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="15분소요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5La-UO-uTU">
-                                <rect key="frame" x="77" y="0.0" width="50" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="15분" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5La-UO-uTU">
+                                <rect key="frame" x="82" y="0.0" width="56" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="2lr-b6-bST"/>
+                                    <constraint firstAttribute="width" constant="56" id="2lr-b6-bST"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bk-JG-ZC5">
-                                <rect key="frame" x="138.5" y="0.0" width="50" height="17"/>
+                                <rect key="frame" x="152" y="0.0" width="50" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="AeB-cn-wDw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:55(금X)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0px-9G-kEj">
-                                <rect key="frame" x="200.5" y="0.0" width="50" height="17"/>
+                                <rect key="frame" x="216" y="0.0" width="50" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="pWL-JL-LTr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-Gf-sZs">
-                                <rect key="frame" x="262" y="0.0" width="65" height="17"/>
+                                <rect key="frame" x="280" y="0.0" width="68" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="oVy-op-0QI"/>
+                                    <constraint firstAttribute="width" constant="68" id="oVy-op-0QI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -76,7 +71,7 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Gi7-0M-0dG" firstAttribute="leading" secondItem="Roq-iZ-Cnf" secondAttribute="leadingMargin" constant="3" id="7yy-ey-FgB"/>
+                    <constraint firstItem="Gi7-0M-0dG" firstAttribute="leading" secondItem="Roq-iZ-Cnf" secondAttribute="leadingMargin" constant="5" id="7yy-ey-FgB"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Gi7-0M-0dG" secondAttribute="trailing" constant="3" id="dQK-Sm-1MS"/>
                     <constraint firstItem="Gi7-0M-0dG" firstAttribute="centerY" secondItem="Roq-iZ-Cnf" secondAttribute="centerY" id="m8X-tN-dam"/>
                 </constraints>
@@ -88,7 +83,7 @@
                 <outlet property="label4" destination="0px-9G-kEj" id="Ixk-9b-14y"/>
                 <outlet property="label5" destination="6TE-Gf-sZs" id="Jaw-id-AIC"/>
             </connections>
-            <point key="canvasLocation" x="-197.5" y="83"/>
+            <point key="canvasLocation" x="-186" y="83"/>
         </tableViewCell>
     </objects>
 </document>

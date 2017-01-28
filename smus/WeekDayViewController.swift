@@ -71,7 +71,11 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
     // 셀 내용 변경하기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if self.location == "onYang"{
-            return (oyController?.getCell(location: "onYang", row: indexPath.row))!
+            if self.vacation! {
+                return (oyController?.getCell(location: "onYangVac", row: indexPath.row))!
+            }else{
+                return (oyController?.getCell(location: "onYang", row: indexPath.row))!
+            }
         }else{
             return (oyController?.getCell(location: "onYang", row: indexPath.row))!
         }
