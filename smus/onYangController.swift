@@ -20,14 +20,10 @@ class onYangController: NSObject{
     var timeTableView: UITableView!
     
     init(vacation: Bool){
-        if vacation {
-            self.url = onYangVac
-        }else{
-            self.url = onYang
-        }
-        
+        self.url = vacation ? onYangVac : onYang
+                
         //get request and response json
-        let response = Alamofire.request(self.url!, parameters: ["foo": "bar"]).responseJSON()
+        let response = Alamofire.request(self.url!).responseJSON()
         if let json = response.result.value {
             self.timeData = JSON(json)
             self.size = self.timeData?.count
@@ -64,4 +60,3 @@ class onYangController: NSObject{
         return self.size!
     }
 }
-

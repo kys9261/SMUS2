@@ -28,8 +28,9 @@ class CaCamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         setTitleView(location: "caCampus");
         
         //time table setting
-        timeTableView.delegate = self
-        timeTableView.dataSource = self
+        self.timeTableView.delegate = self
+        self.timeTableView.dataSource = self
+        self.timeTableView.rowHeight = 33
         
         self.timeTableView?.tableFooterView = UIView()
         

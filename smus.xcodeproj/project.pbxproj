@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16062D671E3CA26E00D989CF /* caStation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16062D661E3CA26E00D989CF /* caStation.xib */; };
 		160FC77F1E3B5FE90048B7AC /* asCampus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160FC77E1E3B5FE90048B7AC /* asCampus.xib */; };
 		160FC78E1E3B7A2F0048B7AC /* caStationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160FC78D1E3B7A2E0048B7AC /* caStationCell.xib */; };
 		160FC7901E3B7A440048B7AC /* caStationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FC78F1E3B7A440048B7AC /* caStationCellView.swift */; };
@@ -23,6 +24,7 @@
 		163F41D51E3A4899000EF7FF /* CaCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F41D41E3A4898000EF7FF /* CaCamViewController.swift */; };
 		163F41D71E3A4CE2000EF7FF /* AsCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F41D61E3A4CE2000EF7FF /* AsCamViewController.swift */; };
 		163F41D91E3A4FAE000EF7FF /* CamTimeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F41D81E3A4FAE000EF7FF /* CamTimeTabViewController.swift */; };
+		165F35421E3CB63B00805F24 /* caStationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165F35411E3CB63B00805F24 /* caStationController.swift */; };
 		16650C0F1E37A8F300C22FA3 /* caCampus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16650C0E1E37A8F300C22FA3 /* caCampus.xib */; };
 		167504A51E2FA09D002B1F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167504A41E2FA09D002B1F84 /* AppDelegate.swift */; };
 		167504A71E2FA09D002B1F84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167504A61E2FA09D002B1F84 /* ViewController.swift */; };
@@ -194,6 +196,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16062D661E3CA26E00D989CF /* caStation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caStation.xib; sourceTree = "<group>"; };
 		160FC77E1E3B5FE90048B7AC /* asCampus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = asCampus.xib; sourceTree = "<group>"; };
 		160FC78D1E3B7A2E0048B7AC /* caStationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caStationCell.xib; sourceTree = "<group>"; };
 		160FC78F1E3B7A440048B7AC /* caStationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caStationCellView.swift; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		163F41D41E3A4898000EF7FF /* CaCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaCamViewController.swift; sourceTree = "<group>"; };
 		163F41D61E3A4CE2000EF7FF /* AsCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsCamViewController.swift; sourceTree = "<group>"; };
 		163F41D81E3A4FAE000EF7FF /* CamTimeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamTimeTabViewController.swift; sourceTree = "<group>"; };
+		165F35411E3CB63B00805F24 /* caStationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caStationController.swift; sourceTree = "<group>"; };
 		16650C0E1E37A8F300C22FA3 /* caCampus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caCampus.xib; sourceTree = "<group>"; };
 		167504A11E2FA09D002B1F84 /* smus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167504A41E2FA09D002B1F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -277,6 +281,7 @@
 			children = (
 				163F41D01E3A13EE000EF7FF /* caCampusController.swift */,
 				160FC7911E3B7AFA0048B7AC /* onYangController.swift */,
+				165F35411E3CB63B00805F24 /* caStationController.swift */,
 			);
 			name = LocationController;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 				16650C0E1E37A8F300C22FA3 /* caCampus.xib */,
 				160FC77E1E3B5FE90048B7AC /* asCampus.xib */,
 				160FC7971E3B7B240048B7AC /* onYang.xib */,
+				16062D661E3CA26E00D989CF /* caStation.xib */,
 			);
 			name = TitleView;
 			sourceTree = "<group>";
@@ -570,6 +576,7 @@
 			files = (
 				160FC78E1E3B7A2F0048B7AC /* caStationCell.xib in Resources */,
 				1622A6801E38F20700482CE9 /* BMJUA_otf.otf in Resources */,
+				16062D671E3CA26E00D989CF /* caStation.xib in Resources */,
 				160FC77F1E3B5FE90048B7AC /* asCampus.xib in Resources */,
 				167504AC1E2FA09D002B1F84 /* Assets.xcassets in Resources */,
 				163F41BA1E3A1178000EF7FF /* caCampusCell.xib in Resources */,
@@ -604,6 +611,7 @@
 				163F41D11E3A13EE000EF7FF /* caCampusController.swift in Sources */,
 				163F41C91E3A123B000EF7FF /* caCampusCellView.swift in Sources */,
 				1675058D1E2FCBAA002B1F84 /* WeekDayViewController.swift in Sources */,
+				165F35421E3CB63B00805F24 /* caStationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

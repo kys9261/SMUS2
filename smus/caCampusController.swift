@@ -19,22 +19,14 @@ class caCampusController: NSObject{
     var timeTableView: UITableView!
     
     init(location: String, vacation: Bool){
-        if vacation {
-            if location == "caCampus" {
-                self.url = dapartCheonanCamVac
-            }else{
-                self.url = dapartAsanCamVac
-            }
+        if location == "caCampus" {
+            self.url = vacation ? dapartCheonanCamVac : departCheonanCam
         }else{
-            if location == "caCampus" {
-                self.url = departCheonanCam
-            }else{
-                self.url = departAsanCam
-            }
+            self.url = vacation ? dapartAsanCamVac : departAsanCam
         }
                 
         //get request and response json
-        let response = Alamofire.request(self.url!, parameters: ["foo": "bar"]).responseJSON()
+        let response = Alamofire.request(self.url!).responseJSON()
         if let json = response.result.value {            
             self.timeData = JSON(json)
             self.size = self.timeData?.count
@@ -49,10 +41,10 @@ class caCampusController: NSObject{
         if location == "caCampus"{
             cell.label1.text = data["천안캠퍼스출발"].stringValue
             cell.label2.text = data["청수동"].stringValue
-            cell.label3.text = data["신방동"].stringValue
+            cell.label3.text = data["아산캠퍼스도착"].stringValue
             cell.label4.text = data["아산역Ktx"].stringValue
             cell.label5.text = data["아산캠퍼스도착"].stringValue
-        }else{
+        }else if location == "asCampus"{
             cell.label1.text = data["아산캠퍼스출발"].stringValue
             cell.label2.text = data["아산역Ktx"].stringValue
             cell.label3.text = data["신방동"].stringValue

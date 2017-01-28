@@ -18,6 +18,7 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var timeTableView: UITableView!
     
     var oyController: onYangController? = nil
+    var csController: caStationController? = nil
     
     override func viewWillAppear(_ animated: Bool) {
         let tabBarCont = self.tabBarController as! TimeTabViewController
@@ -28,14 +29,16 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
         setTitleView(location: self.location!);
         
         //time table setting
-        timeTableView.delegate = self
-        timeTableView.dataSource = self
-        
+        self.timeTableView.delegate = self
+        self.timeTableView.dataSource = self
+        self.timeTableView.rowHeight = 33
+
         self.timeTableView?.tableFooterView = UIView()
         
-        
         //controller init
-        if location == "onYang"{
+        if location == "caStation"{
+            csController = caStationController(location: "caStationWeekDay", vacation: self.vacation!)
+        }else if location == "onYang"{
             oyController = onYangController(vacation: self.vacation!)
         }
     }
@@ -60,17 +63,20 @@ class WeekDayViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     // 테이블 행수 얻기
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.location == "onYang"{
+        if self.location == "caStation"{
+            return (csController?.cellSize())!
+        }else if self.location == "onYang"{
             return (oyController?.cellSize())!
         }else{
             return 1
         }
     }
     
-    
     // 셀 내용 변경하기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if self.location == "onYang"{
+        if self.location == "caStation"{
+            return (csController?.getCell(location: "caStationWeekDay", row: indexPath.row))!
+        }else if self.location == "onYang"{
             if self.vacation! {
                 return (oyController?.getCell(location: "onYangVac", row: indexPath.row))!
             }else{

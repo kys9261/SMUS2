@@ -28,9 +28,10 @@ class AsCamViewController: UIViewController, UITableViewDelegate, UITableViewDat
         setTitleView(location: "asCampus");
         
         //time table setting
-        timeTableView.delegate = self
-        timeTableView.dataSource = self
-        
+        self.timeTableView.delegate = self
+        self.timeTableView.dataSource = self
+        self.timeTableView.rowHeight = 33
+
         self.timeTableView?.tableFooterView = UIView()
         
         //controller init

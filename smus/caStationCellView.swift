@@ -6,4 +6,13 @@
 //  Copyright © 2017년 YongSeongKim. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class caStationCellView: UITableViewCell {
+    @IBOutlet var label1: UILabel!
+    @IBOutlet var label2: UILabel!
+    @IBOutlet var label3: UILabel!
+    @IBOutlet var label4: UILabel!
+    @IBOutlet var label5: UILabel!
+    @IBOutlet var label6: UILabel!
+}

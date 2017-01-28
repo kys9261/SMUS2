@@ -10,10 +10,20 @@ let configUrl = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jso
 
 
 //non vacation
+let caStationWeekDay = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_station_weekday.json"
+let caStationSat = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_station_sat.json"
+let caStationSun = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_station_sunday.json"
+
+let caTerminalWeekDay = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_terminal_weekday.json"
+let caTerminalSat = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_terminal_sat.json"
+let chTerminalSun = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_terminal_sunday.json"
+
+let onYang = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/onyang_weekday.json"
+
 let departCheonanCam = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_cam_depart.json"
 let departAsanCam = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/asan_cam_depart.json"
 
-let onYang = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/onyang_weekday.json"
+
 
 //vacation
 let dapartCheonanCamVac = "https://raw.githubusercontent.com/kys9261/smus2/master/smus/jsonData/nonvacation/cheonan_cam_depart.json"
