@@ -10,17 +10,33 @@ import UIKit
 import GoogleMobileAds
 import Firebase
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var tracker: GAITracker?
 
-
+    func setupGoogleAnalytics() {
+        GAI.sharedInstance().trackUncaughtExceptions = true;
+        GAI.sharedInstance().dispatchInterval = 20
+        GAI.sharedInstance().logger.logLevel = .verbose
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.tracker = GAI.sharedInstance().tracker(withTrackingId: "UA-64056947-1")
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GADMobileAds.configure(withApplicationID: "ca-app-pub-0528563211821066/1643960076")
         FIRApp.configure()
         sleep(1)
+        
+        FIRAnalytics.logEvent(withName: kFIREventSelectContent, parameters: [
+            kFIRParameterContentType:"Connect" as NSObject,
+            kFIRParameterItemID:"1" as NSObject
+            ])
+        setupGoogleAnalytics()
 
         return true
     }

@@ -49,11 +49,12 @@
 		1675059C1E30E634002B1F84 /* TimeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059B1E30E634002B1F84 /* TimeTabViewController.swift */; };
 		1675059E1E3107C3002B1F84 /* SatDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059D1E3107C3002B1F84 /* SatDayViewController.swift */; };
 		167505A01E3107D1002B1F84 /* WeekEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */; };
+		167FE2A51E3EBC6200D9504A /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 167FE2A41E3EBC6200D9504A /* libGoogleAnalytics.a */; };
+		167FE2A91E3EC19C00D9504A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 167FE2A81E3EC19C00D9504A /* GoogleService-Info.plist */; };
 		16BDC12E1E3CDFEA0054D407 /* caTerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDC12D1E3CDFEA0054D407 /* caTerminalController.swift */; };
 		16BDC13D1E3CE02C0054D407 /* caTerminalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BDC13C1E3CE02C0054D407 /* caTerminalCell.xib */; };
 		16BDC13F1E3CE0450054D407 /* caTerminalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDC13E1E3CE0450054D407 /* caTerminalCellView.swift */; };
 		16BDC1411E3CE08A0054D407 /* caTerminal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BDC1401E3CE08A0054D407 /* caTerminal.xib */; };
-		16BDC1431E3CEF530054D407 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BDC1421E3CEF530054D407 /* GoogleService-Info.plist */; };
 		16BDC1491E3CF12E0054D407 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BDC1481E3CF12E0054D407 /* FirebaseAnalytics.framework */; };
 		16BDC1581E3CF13B0054D407 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BDC1571E3CF13B0054D407 /* CoreData.framework */; };
 		16BDC15A1E3CF1470054D407 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BDC1591E3CF1470054D407 /* libsqlite3.tbd */; };
@@ -247,11 +248,13 @@
 		1675059B1E30E634002B1F84 /* TimeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTabViewController.swift; sourceTree = "<group>"; };
 		1675059D1E3107C3002B1F84 /* SatDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatDayViewController.swift; sourceTree = "<group>"; };
 		1675059F1E3107D1002B1F84 /* WeekEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekEndViewController.swift; sourceTree = "<group>"; };
+		167FE2961E3EBC0800D9504A /* smus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smus-Bridging-Header.h"; sourceTree = "<group>"; };
+		167FE2A41E3EBC6200D9504A /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Pods/GoogleAnalytics/Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		167FE2A81E3EC19C00D9504A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16BDC12D1E3CDFEA0054D407 /* caTerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caTerminalController.swift; sourceTree = "<group>"; };
 		16BDC13C1E3CE02C0054D407 /* caTerminalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caTerminalCell.xib; sourceTree = "<group>"; };
 		16BDC13E1E3CE0450054D407 /* caTerminalCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caTerminalCellView.swift; sourceTree = "<group>"; };
 		16BDC1401E3CE08A0054D407 /* caTerminal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caTerminal.xib; sourceTree = "<group>"; };
-		16BDC1421E3CEF530054D407 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16BDC1481E3CF12E0054D407 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		16BDC1571E3CF13B0054D407 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		16BDC1591E3CF1470054D407 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -276,6 +279,7 @@
 				167505601E2FA715002B1F84 /* EventKit.framework in Frameworks */,
 				167505611E2FA715002B1F84 /* EventKitUI.framework in Frameworks */,
 				1675055D1E2FA710002B1F84 /* MessageUI.framework in Frameworks */,
+				167FE2A51E3EBC6200D9504A /* libGoogleAnalytics.a in Frameworks */,
 				1675057F1E2FC397002B1F84 /* Alamofire.framework in Frameworks */,
 				167505591E2FA6F5002B1F84 /* SystemConfiguration.framework in Frameworks */,
 				167505561E2FA66B002B1F84 /* GoogleMobileAds.framework in Frameworks */,
@@ -316,6 +320,9 @@
 		167504981E2FA09D002B1F84 = {
 			isa = PBXGroup;
 			children = (
+				167FE2A81E3EC19C00D9504A /* GoogleService-Info.plist */,
+				167FE2A41E3EBC6200D9504A /* libGoogleAnalytics.a */,
+				167FE2961E3EBC0800D9504A /* smus-Bridging-Header.h */,
 				167505551E2FA66B002B1F84 /* GoogleMobileAds.framework */,
 				1675053B1E2FA426002B1F84 /* SwiftyJSON.xcodeproj */,
 				1675051C1E2FA3C8002B1F84 /* Alamofire.xcodeproj */,
@@ -348,7 +355,6 @@
 				167504AB1E2FA09D002B1F84 /* Assets.xcassets */,
 				167505391E2FA3E3002B1F84 /* Const.swift */,
 				162650671E361F9B002C4B2B /* Info.plist */,
-				16BDC1421E3CEF530054D407 /* GoogleService-Info.plist */,
 				1622A6721E38F15C00482CE9 /* BMJUA_otf.otf */,
 			);
 			path = smus;
@@ -633,7 +639,7 @@
 				162650681E361F9B002C4B2B /* Info.plist in Resources */,
 				16650C0F1E37A8F300C22FA3 /* caCampus.xib in Resources */,
 				160FC7981E3B7B240048B7AC /* onYang.xib in Resources */,
-				16BDC1431E3CEF530054D407 /* GoogleService-Info.plist in Resources */,
+				167FE2A91E3EC19C00D9504A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,6 +871,10 @@
 				INFOPLIST_FILE = smus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleAnalytics/Libraries",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -892,6 +902,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beehive.smus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smus-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -913,6 +924,10 @@
 				INFOPLIST_FILE = smus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleAnalytics/Libraries",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -940,6 +955,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beehive.smus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smus-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

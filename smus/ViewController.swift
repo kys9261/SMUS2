@@ -21,6 +21,16 @@ class ViewController: UIViewController {
         
     var isVacation: Bool? = nil
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //Google Analytics set screen
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            let screenName = "Main Page"
+            let build = GAIDictionaryBuilder.createScreenView().set(screenName, forKey: kGAIScreenName).build() as NSDictionary
+            appDelegate.tracker!.send(build as [NSObject : AnyObject])
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

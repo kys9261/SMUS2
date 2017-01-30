@@ -3,4 +3,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'smus' do
   use_frameworks!
   pod 'Firebase/Core'
+  pod 'Google/Analytics'
 end
