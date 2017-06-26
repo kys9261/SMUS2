@@ -1,6 +1,6 @@
 {
 	"title":"2017 1학기 시간표",
 	"version":1.5,
-	"vacation":false,
-	"comment":"평일 천안터미널 10시~11시 시간 수정완료"
+	"vacation":true,
+	"comment":"여름방학시간"
 }
